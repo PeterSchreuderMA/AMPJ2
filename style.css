@@ -1,0 +1,69 @@
+body
+{
+    background-color: deepskyblue;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    margin: 0;
+}
+
+li
+{
+    font-family: "Arial Black";
+    color: rgba(253, 128, 2,0.5);
+    font-weight: bold;
+}
+
+a
+{
+    font-family: "Arial Black";
+    color: rgba(253, 128, 2,1);
+    font-weight: bold;
+}
+
+#container
+{
+    background-color: antiquewhite;
+
+    display: grid;
+
+    grid-template-columns: 300px auto;
+
+    width: 100%;
+
+    height: 100%;
+}
+
+html
+{
+    height: 100%;
+}
+
+#myMenu
+{
+    background-color: rgb(25, 25, 25);
+
+    border: 2px powderblue solid;
+
+    grid-column: 1/2;
+
+    height: 100%;
+}
+
+#myIframe
+{
+    background-color: darkred;
+
+    border: 5px powderblue outset;
+
+    grid-column: 2/3;
+
+    width: 100%;
+
+    height: 100%;
+}
+
