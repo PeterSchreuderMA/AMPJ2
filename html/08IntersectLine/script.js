@@ -18,6 +18,9 @@ let S = new Point(0,0,10,"White");
 let l = new CalculateLinear(1,1);
 let m = new CalculateLinear(1,1);
 
+let titel_text = new draw_text(canvas_width/2, 50, "Intersect Line",50);
+
+
 //console.log(f.calcY())
 
 A.drag();
@@ -48,6 +51,7 @@ function update()
 
     //Q.draw(context,"Punt: Q");
 
+    titel_text.draw(context);
 }
 
 update();

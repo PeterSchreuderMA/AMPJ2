@@ -4,11 +4,14 @@ canvas.width = window.innerWidth ;
 canvas.height = window.innerHeight;
 let myPoints = [];
 
+let titel_text = new draw_text(canvas.width/2, 50, "Connect The Dots",50);
+
+
 function setUp()
 {
   for (let i = 0; i <4; i++)
   {
-    addPoint()
+    addPoint();
   }
   update();
 }
@@ -45,21 +48,22 @@ function update()
   for (var i = 0; i < myPoints.length; i++)
   {
     myPoints[i].draw(context);
-    myPoints[i].print(context,i);
   }
 
+  titel_text.draw(context);
 }
 
 setUp();
 
-function getRandomNumber(max)
+function getRandomNumber(min,max)
 {
-  return Math.random()*max;
+    //getRandomNumber(10Median&Centroid,canvas_width-10Median&Centroid)
+    return Math.random()*(max - min) + min;
 }
 
 
 function addPoint()
 {
-  let point = new Point(getRandomNumber(canvas.width),getRandomNumber(canvas.height),"#" + Math.floor(getRandomNumber(255*255*255)).toString(16));
+  let point = new Point(getRandomNumber(10,canvas.width-10),getRandomNumber(10,canvas.height-10),"#" + Math.floor(getRandomNumber(255*255*255)).toString(16));
   myPoints.push(point);
 }

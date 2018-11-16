@@ -8,6 +8,9 @@ canvas_height = canvas.height;
 
 let myPoints = [];
 
+let titel_text = new draw_text(canvas_width/2, 50, "Spawning Balls",50);
+
+
 function setUp()
 {
   /*for (var i = 0; i < 10Median&Centroid; i++)
@@ -45,6 +48,7 @@ function update()
       }
     }
 
+    titel_text.draw(context);
 }
 
 //Mouse detection

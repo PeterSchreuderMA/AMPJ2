@@ -17,6 +17,9 @@ let S = new Point(0,0,10,"White");
 let l = new CalculateLinear(1,1);
 let m = new CalculateLinear(1,1);
 
+
+let titel_text = new draw_text(canvas_width/2, 50, "Perpendicular Line",50);
+
 //console.log(f.calcY())
 
 A.drag();
@@ -46,7 +49,7 @@ function update()
     S.draw(context,"Punt: S");
 
     //Q.draw(context,"Punt: Q");
-
+    titel_text.draw(context);
 }
 
 update();

@@ -7,12 +7,12 @@ canvas.height = window.innerHeight;
 canvas_width = canvas.width;
 canvas_height = canvas.height;
 
+let titel_text = new draw_text(canvas_width/2, 50, "Liniar Function: 3 Points",50);
+
 
 let A = new Point(canvas_width/2,-100+canvas_height/2,15,"red");
 let B = new Point(-100+canvas_width/2,100+canvas_height/2,15,"blue");
 let C = new Point(100+canvas_width/2,100+canvas_height/2,15,"yellow");
-
-let Q = new Point(canvas_width/2,canvas_height/2,15,"purple");
 
 let f1 = new CalculateLinear(10,100);
 let f2 = new CalculateLinear(10,100);
@@ -42,8 +42,7 @@ function update()
     B.draw(context,"Punt: B");
     C.draw(context,"Punt: C");
 
-    Q.draw(context,"Punt: Q");
-
+    titel_text.draw(context);
 }
 
 update();

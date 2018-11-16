@@ -7,6 +7,8 @@ canvas.height = window.innerHeight;
 canvas_width = canvas.width;
 canvas_height = canvas.height;
 
+let titel_text = new draw_text(canvas_width/2, 50, "Liniar Function: 2 Points",50);
+
 
 let A = new Point(100,100,15,"red");
 let B = new Point(600,200,15,"blue");
@@ -39,6 +41,7 @@ function update()
     C.draw(context,"Punt: C");
     D.draw(context,"Punt: D");
 
+    titel_text.draw(context);
 }
 
 update();

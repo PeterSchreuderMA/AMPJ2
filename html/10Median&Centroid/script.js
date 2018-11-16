@@ -26,7 +26,7 @@ let m1 = new CalculateLinear(10,100);
 let m2 = new CalculateLinear(10,100);
 let m3 = new CalculateLinear(10,100);
 
-let new_text = new draw_text(canvas_width/2, -200+canvas_height/2, "Shadow and Outline Text test",50);
+let titel_text = new draw_text(canvas_width/2, 50, "Shadow and Outline Text test",50);
 
 
 //console.log(f.calcY())
@@ -79,7 +79,7 @@ function update()
     S2.draw(context,"Punt: S2");
     S3.draw(context,"Punt: S3");
 
-    new_text.draw(context);
+    titel_text.draw(context);
 
 }
 

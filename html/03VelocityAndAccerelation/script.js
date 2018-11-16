@@ -7,6 +7,9 @@ canvas.height = window.innerHeight;
 canvas_width = canvas.width;
 canvas_height = canvas.height;
 
+let titel_text = new draw_text(canvas_width/2, 50, "Velocity And Accerelation",50);
+
+
 let kineticObject = [{},{},{}];
 let objectLines = [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}];
 
@@ -96,7 +99,7 @@ function update()
 
     //lineSegment.draw(context);
 
-
+    titel_text.draw(context);
   //new_text.draw(context);
 }
 

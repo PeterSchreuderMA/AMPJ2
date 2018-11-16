@@ -4,6 +4,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let myPoints = [];
 
+let titel_text = new draw_text(canvas.width/2, 50, "My Point",50);
+
 function setUp(){
   for (var i = 0; i < 10; i++) {
     let myPoint = new Point(getRandomNumber(canvas.width),getRandomNumber(canvas.height),10);
@@ -24,6 +26,8 @@ function update(){
   {
     myPoints[i].draw(context);
   }
+
+  titel_text.draw(context);
 
 }
 
