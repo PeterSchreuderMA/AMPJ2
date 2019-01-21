@@ -22,7 +22,7 @@ function update()
   context.fillStyle = "rgba(200,200,200,0.01)";
   context.fillRect(0,0,canvas.width,canvas.height)
 
-  requestAnimationFrame(update);
+    requestAnimationFrame(update);
 
   if(Math.random()<0.01)
   {

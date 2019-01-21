@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Sprite Sheet</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="canvas">Canvas</canvas>
+
+    <div id="drop" class="layout-column twelve" ondrop="drop(event)" ondragover="return false">Drop an image</div>
+
+    <script src="../../lib/Point.js" charset="utf-8"></script>
+    <script src="../../lib/Vector2d.js" charset="utf-8"></script>
+    <script src="../../lib/LineSegment.js" charset="utf-8"></script>
+    <script src="../../lib/draw_text.js" charset="utf-8"></script>
+    <script src="../../lib/Visual/draw_arrow.js" charset="utf-8"></script>
+
+    <!--Math-->
+    <script src="../../lib/math/lengthdir_x.js" charset="utf-8"></script>
+    <script src="../../lib/math/lengthdir_y.js" charset="utf-8"></script>
+
+    <script src="script.js" charset="utf-8"></script>
+
+
+
+
+    Amount of cells X: <input type="number" name="numCellsX" value=0>
+    Amount of cells Y: <input type="number" name="numCellsY" value=0>
+    <button type="button" name="loadSheet" value=0 onclick="_loadSheet.value=1">Generate!</button>
+
+  </body>
+</html>

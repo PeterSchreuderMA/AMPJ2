@@ -83,18 +83,18 @@ function update()
 function DrawWheel(_x,_y,_dir)
 {
     context.save();
-    context.drawImage(frontWheel,-0.5*frontWheel.width,-0.5*frontWheel.height);
-    context.rotate(_dir);
     context.translate(_x,_y);
+    context.rotate(_dir);
+    context.drawImage(frontWheel,-0.5*frontWheel.width,-0.5*frontWheel.height);
     context.restore();
 }
 
 function DrawWheelRear(_x,_y,_dir)
 {
     context.save();
-    context.drawImage(rearWheel,-0.5*frontWheel.width,-0.5*frontWheel.height);
-    context.rotate(_dir);
     context.translate(_x,_y);
+    context.rotate(_dir);
+    context.drawImage(rearWheel,-0.5*frontWheel.width,-0.5*frontWheel.height);
     context.restore();
 }
 
