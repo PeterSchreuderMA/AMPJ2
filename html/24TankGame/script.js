@@ -90,6 +90,7 @@ function setUp()
     greenTank = new Tank(canvas_width / 2, canvas_height / 2);
 
     turnSpeed = 0.5;
+    _kInput.updateInput();
 
     update();
 }
@@ -104,7 +105,6 @@ function update()
     if (deltaTime > 1 / fps)
     {
         startTime = new Date();
-        _kInput.updateInput();
 
 
         greenTank.vel.angle += turnSpeed * _kInput.horizontal;
