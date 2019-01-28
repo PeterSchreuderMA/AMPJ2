@@ -60,13 +60,30 @@ class Tank
         context.save();
         context.translate(this.pos.dx, this.pos.dy);
         context.rotate(this.vel.angle + Math.PI / 2);
-        context.drawImage(this.spriteSheet, this.sx, this.sy, this.sw, this.sh, -16, -16, 64, 64);
+        context.drawImage(this.spriteSheet, this.sx, this.sy, this.sw, this.sh, -this.sw * 0.5, -this.sh * 0.5, 64, 64);
         context.restore();
 
 
     }
 }
 
+class Projectile
+{
+    constructor(x, y)
+    {
+        this.pos = new Vector2d(x, y);
+        this.spriteSheet = new Image();
+        this.spriteSheet.src = "Assets/Tanks_sheet.png";
+    }
+
+    draw()
+    {
+        let sx = (21 % 8) * 32;
+        let sy = Math.floor(21 / 8) * 32;
+
+        context.drawImage(this.spriteSheet, sx, sy, 32, 32, this.pos.dx, this.pos.dy, 64, 64);
+    }
+}
 
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
@@ -80,6 +97,10 @@ canvas_height = canvas.height;
 let startTime, currentTime, deltaTime, fps;
 let _kInput;
 
+let greenTank;
+
+let projectiles = [];
+
 let turnSpeed;
 
 function setUp()
@@ -89,11 +110,16 @@ function setUp()
     _kInput = new kInput();
     greenTank = new Tank(canvas_width / 2, canvas_height / 2);
 
-    turnSpeed = 0.5;
-    _kInput.updateInput();
+    turnSpeed = 0.1;
+
 
     update();
 }
+
+document.addEventListener('keydown', function(input)
+{
+    _kInput.updateInput(input);
+});
 
 function update()
 {
@@ -113,6 +139,23 @@ function update()
         greenTank.move();
 
 
+
+
+    }
+
+    //Shooting
+    if (_kInput.v_button_a)
+    {
+        let _projectile = new Projectile(greenTank.pos.dx, greenTank.pos.dy);
+
+        projectiles.push(_projectile);
+    }
+
+
+    // - Draw Event -
+    for (let i = 0; i < projectiles.length; i++)
+    {
+        projectiles[i].draw();
     }
 
     greenTank.draw();
