@@ -150,60 +150,80 @@
     <session id="-224540761">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="7" />
-          <entry key="js" value="8" />
+          <entry key="html" value="2" />
+          <entry key="js" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="7" />
-          <entry key="JavaScript" value="8" />
+          <entry key="HTML" value="2" />
+          <entry key="JavaScript" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="18" />
           <entry key="html" value="7" />
-          <entry key="js" value="1694" />
+          <entry key="js" value="1226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="18" />
           <entry key="HTML" value="7" />
-          <entry key="JavaScript" value="1694" />
+          <entry key="JavaScript" value="1226" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/25ReflectingLine/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/24TankGame/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="102">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/25ReflectingLine/script.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/24TankGame/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+            <state relative-caret-position="1734">
+              <caret line="168" column="5" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
+              <folding>
+                <element signature="n#Tank#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Utility/kInput.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="53" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/24TankGame/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -223,7 +243,6 @@
     <findStrings>
       <find>kineticObject1</find>
       <find>d</find>
-      <find>Player</find>
     </findStrings>
     <replaceStrings>
       <replace>kineticObject[i]</replace>
@@ -235,6 +254,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/html/12PerpendiculerBisector&amp;CircumCenter/script.js" />
         <option value="$PROJECT_DIR$/html/12PerpendiculerBisector&amp;CircumCenter/index.html" />
         <option value="$PROJECT_DIR$/lib/draw_text.js" />
         <option value="$PROJECT_DIR$/style.css" />
@@ -285,7 +305,6 @@
         <option value="$PROJECT_DIR$/../Van_Jelle/AMP_Master/2018-AMP-GD2A-/html/23voorbeeld/script.js" />
         <option value="$PROJECT_DIR$/lib/Utility/kInput.js" />
         <option value="$PROJECT_DIR$/html/24TankGame/script.js" />
-        <option value="$PROJECT_DIR$/html/25ReflectingLine/script.js" />
       </list>
     </option>
   </component>
@@ -299,7 +318,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -309,7 +328,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,13 +344,7 @@
               <item name="AMPJ2" type="b2602c69:ProjectViewProjectNode" />
               <item name="AMPJ2" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="02ConnectTheDots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AMPJ2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMPJ2" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="25ReflectingLine" type="462c0819:PsiDirectoryNode" />
+              <item name="24TankGame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AMPJ2" type="b2602c69:ProjectViewProjectNode" />
@@ -349,6 +361,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,18 +374,18 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\AMPJ2\html" />
-      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html" />
-      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html\18ToAndFro" />
-      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html\17DrawTheVector" />
-      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html\23InteractiveSpriteSheet\Assets" />
       <recent name="C:\Users\theri\OneDrive\Documenten\ma_development\AMP\Zelf\lib" />
       <recent name="C:\Users\theri\OneDrive\Documenten\ma_development\AMP\Zelf\html\05SpawningBalls" />
       <recent name="C:\Users\theri\OneDrive\Documenten\ma_development\AMP\Zelf\lib\math" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html" />
+      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html\18ToAndFro" />
+      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html\17DrawTheVector" />
+      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\lib" />
+      <recent name="D:\Program Files\OneDrive\Documenten\ma_development\AMP\Zelf\html\15MyClock" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -445,15 +458,13 @@
       <workItem from="1548075449587" duration="5388000" />
       <workItem from="1548081928201" duration="1329000" />
       <workItem from="1548318861638" duration="52000" />
-      <workItem from="1548678221734" duration="7163000" />
-      <workItem from="1548924443705" duration="14000" />
-      <workItem from="1549282999326" duration="1586000" />
-      <workItem from="1551273619790" duration="1382000" />
+      <workItem from="1548678221734" duration="7761000" />
+      <workItem from="1548778672645" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159125000" />
+    <option name="totallyTimeSpent" value="157340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -465,19 +476,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16791044" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16471216" />
       <window_info id="Structure" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.3275488" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32858709" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -497,6 +506,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Van_Jelle/AMP_Master/2018-AMP-GD2A-/html/14myCar/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/15MyClock/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/14MyCar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/14MyCar/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/15MyClock/hand2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -761,24 +794,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/24TankGame/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="150" column="62" selection-start-line="150" selection-start-column="62" selection-end-line="150" selection-end-column="62" />
+        <state relative-caret-position="1734">
+          <caret line="168" column="5" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
           <folding>
             <element signature="n#Tank#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/02ConnectTheDots/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/07LiniarFunction2Points/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Utility/kInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="867">
+          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="53" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -786,20 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/25ReflectingLine/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/25ReflectingLine/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
         </state>
       </provider>
     </entry>

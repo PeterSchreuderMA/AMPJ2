@@ -72,8 +72,14 @@ class Projectile
     constructor(x, y)
     {
         this.pos = new Vector2d(x, y);
+        this.vel = new Vector2d(0, 0);
         this.spriteSheet = new Image();
         this.spriteSheet.src = "Assets/Tanks_sheet.png";
+    }
+
+    update()
+    {
+        this.pos.add(this.vel);
     }
 
     draw()
@@ -81,7 +87,11 @@ class Projectile
         let sx = (21 % 8) * 32;
         let sy = Math.floor(21 / 8) * 32;
 
-        context.drawImage(this.spriteSheet, sx, sy, 32, 32, this.pos.dx, this.pos.dy, 64, 64);
+        context.save();
+        context.translate(this.pos.dx, this.pos.dy);
+
+        context.drawImage(this.spriteSheet,sx,sy,32,31,-32,-32,64,64);
+        context.restore();
     }
 }
 
@@ -96,6 +106,9 @@ canvas_height = canvas.height;
 
 let startTime, currentTime, deltaTime, fps;
 let _kInput;
+
+let groundSprite = new Image();
+groundSprite.src = "Assets/Tanks_sheet.png";
 
 let greenTank;
 
@@ -116,11 +129,13 @@ function setUp()
     update();
 }
 
+// - Input Update -
 document.addEventListener('keydown', function(input)
 {
     _kInput.updateInput(input);
 });
 
+// - Game Loop -
 function update()
 {
     requestAnimationFrame(update);
@@ -134,13 +149,26 @@ function update()
 
 
         greenTank.vel.angle += turnSpeed * _kInput.horizontal;
-        console.log(_kInput.horizontal);
-
         greenTank.move();
 
+        // - Draw Event -
+        for (let i = 0; i < projectiles.length; i++)
+        {
+            projectiles[i].update();
+
+            if (projectiles[i].pos.dx < 0 || projectiles[i].pos.dx > canvas_width || projectiles[i].pos.dy < 0 || projectiles[i].pos.dy > canvas_height)
+            {
+                projectiles.splice(i, 1);
+            }
+        }
 
 
+    }
 
+    if (_kInput.v_vertical)
+    {
+        greenTank.vel.magnitude += 1;
+        fps += 5;
     }
 
     //Shooting
@@ -148,17 +176,41 @@ function update()
     {
         let _projectile = new Projectile(greenTank.pos.dx, greenTank.pos.dy);
 
+        _projectile.pos.dx = greenTank.pos.dx;
+        _projectile.pos.dy = greenTank.pos.dy;
+
+        _projectile.vel.dx = greenTank.vel.dx * 2;
+        _projectile.vel.dy = greenTank.vel.dy * 2;
+
         projectiles.push(_projectile);
     }
 
-
     // - Draw Event -
+
+    //Draw ground
+    for (let i; i < canvas_width / 32; i++)// - Horizontal
+    {
+        for (let j; j < canvas_height / 32; j++)// - Vertical
+        {
+            let sx = (21 % 8) * 32;
+            let sy = Math.floor(21 / 8) * 32;
+
+            context.drawImage(groundSprite, sx + i, sy + j, 32 + i, 31 + j, -32, -32, 64, 64);
+        }
+    }
+
+    greenTank.draw();
+
+
     for (let i = 0; i < projectiles.length; i++)
     {
         projectiles[i].draw();
     }
 
-    greenTank.draw();
+
+    // - Clear Input -
+    _kInput.clearInput();
+
 }
 
 setUp();
