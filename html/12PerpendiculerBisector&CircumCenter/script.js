@@ -7,6 +7,7 @@ canvas.height = window.innerHeight;
 canvas_width = canvas.width;
 canvas_height = canvas.height;
 
+let debug = true;
 
 let A = new Point(canvas_width/2,-100+canvas_height/2,15,"red");
 let B = new Point(-100+canvas_width/2,100+canvas_height/2,15,"blue");
@@ -86,19 +87,19 @@ function update()
     f2.draw(context);
     f3.draw(context);
 
-    m1.draw(context,"gray");//line
-    m2.draw(context,"gray");
-    m3.draw(context,"gray");
+    m1.draw(context,"gray", debug);//line
+    //m2.draw(context,"gray", debug);
+    //m3.draw(context,"gray", debug);
 
-    A.draw(context,"Punt: A");
-    B.draw(context,"Punt: B");
-    C.draw(context,"Punt: C");
+    A.draw(context,"Punt: A", debug);
+    B.draw(context,"Punt: B", debug);
+    C.draw(context,"Punt: C", debug);
 
-    Q.draw(context,"Punt: Q");
+    Q.draw(context,"Punt: Q", debug);
 
-    S1.draw(context,"Punt: S1");
-    S2.draw(context,"Punt: S2");
-    S3.draw(context,"Punt: S3");
+    S1.draw(context,"Punt: S1", debug);
+    S2.draw(context,"Punt: S2", debug);
+    S3.draw(context,"Punt: S3", debug);
 
     //new_text.draw(context);
 

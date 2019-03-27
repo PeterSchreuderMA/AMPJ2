@@ -7,6 +7,7 @@ canvas.height = window.innerHeight;
 canvas_width = canvas.width;
 canvas_height = canvas.height;
 
+var debug = true;
 
 let A = new Point(-100+canvas_width/2,-100+canvas_height/2,15,"red");
 let B = new Point(100+canvas_width/2,-100+canvas_height/2,15,"blue");
@@ -39,14 +40,14 @@ function update()
     m.intercept = C.y - m.slope * C.x;
 
 
-    l.draw(context,"Punt: L");
-    m.draw(context,"Punt: M");
+    l.draw(context,"Punt: L", debug);
+    m.draw(context,"Punt: M", debug);
 
-    A.draw(context,"Punt: A");
-    B.draw(context,"Punt: B");
-    C.draw(context,"Punt: C");
+    A.draw(context,"Punt: A", debug);
+    B.draw(context,"Punt: B", debug);
+    C.draw(context,"Punt: C", debug);
 
-    S.draw(context,"Punt: S");
+    S.draw(context,"Punt: S", debug);
 
     //Q.draw(context,"Punt: Q");
     titel_text.draw(context);
