@@ -55,9 +55,9 @@ function Update()
     va.magnitude = v.Dot(va);
     vb.magnitude = v.Dot(vb);
 
-    A.draw(context,"Punt: A", true);
-    B.draw(context,"Punt: B", true);
-    C.draw(context,"Punt: C", true);
+    A.draw(context, "Punt: A", true);
+    B.draw(context, "Punt: B", true);
+    C.draw(context, "Punt: C", true);
 
     v.DrawArrow(A.x, A.y);
     l.draw(context);
